@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+credential_path=~/credentials/docker-password.txt
+dockerpath="superknife0512/uda-final"
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "Login docker..."
+cat $credential_path | sudo docker login --username superknife0512 --password-stdin
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath

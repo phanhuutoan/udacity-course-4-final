@@ -1,18 +1,15 @@
 #!/usr/bin/env bash
 
 # This tags and uploads an image to Docker Hub
-
-# Step 1:
-# This is your Docker ID/path
-# dockerpath=<>
-
-# Step 2
-# Run the Docker Hub container with kubernetes
-
+dockerpath=superknife0512/uda-final 
 
 # Step 3:
 # List kubernetes pods
+kubectl get pods
 
-# Step 4:
-# Forward the container port to a host
+# Run and forward app
+kubectl run udacity-final --image $dockerpath --port=80
+kubectl port-forward udacity-final 8080:80
+
+# Now we can view app at 8080
 
