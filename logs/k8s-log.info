@@ -21,3 +21,10 @@ Port: 8080
 0     0  6.575  296.0     15.3  396.9   4.98
 [2023-05-06 04:50:02,673] INFO in app: Prediction INFO: [20.35373177134412]
 127.0.0.1 - - [06/May/2023 04:50:02] "POST /predict HTTP/1.1" 200 -
+
+==== FORWARD PORT ====
+NAME            READY   STATUS    RESTARTS        AGE
+udacity-final   1/1     Running   1 (2m13s ago)   3h21m
+Error from server (AlreadyExists): pods "udacity-final" already exists
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80

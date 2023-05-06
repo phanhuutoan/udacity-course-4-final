@@ -1,4 +1,6 @@
 # My Udacity course 4 final project
+[![<Udacity_final>](https://circleci.com/gh/phanhuutoan/udacity-course-4-final.svg?style=svg)](<https://app.circleci.com/pipelines/github/phanhuutoan/udacity-course-4-final>)
+
 
 ## How to deploy docker
 1. Go to run_docker.sh and change dockerpath base on your credentials
